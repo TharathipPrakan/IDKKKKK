@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML และ CSS ที่ใช้บ่อย</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+            background-color: white;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        ul {
+            list-style-type: disc;
+            margin: 1rem 0;
+            padding-left: 2rem;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML และ CSS ที่ใช้บ่อย</h1>
+    </header>
+    <main>
+        <section>
+            <h2>พื้นฐาน</h2>
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code>: ประกาศเอกสาร HTML5</li>
+                <li><code>&lt;html&gt;</code>: เริ่มต้นและสิ้นสุดเอกสาร HTML</li>
+                <li><code>&lt;head&gt;</code>: ส่วนหัวของเอกสาร</li>
+                <li><code>&lt;title&gt;</code>: ชื่อเรื่องของเอกสาร</li>
+                <li><code>&lt;meta&gt;</code>: เมตาดาต้า เช่น การเข้ารหัสอักขระ, ข้อมูล viewport</li>
+                <li><code>&lt;link&gt;</code>: ลิงค์ไปยังไฟล์ภายนอก เช่น CSS</li>
+                <li><code>&lt;style&gt;</code>: สไตล์ในตัว</li>
+                <li><code>&lt;script&gt;</code>: สคริปต์ภายใน หรือเชื่อมโยงกับไฟล์สคริปต์ภายนอก</li>
+                <li><code>&lt;body&gt;</code>: เนื้อหาหลักของเอกสาร</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>ข้อความและรูปแบบ</h2>
+            <ul>
+                <li><code>&lt;h1&gt; - &lt;h6&gt;</code>: หัวเรื่องระดับ 1 ถึง 6</li>
+                <li><code>&lt;p&gt;</code>: ย่อหน้า</li>
+                <li><code>&lt;br&gt;</code>: ขึ้นบรรทัดใหม่</li>
+                <li><code>&lt;hr&gt;</code>: เส้นแบ่งแนวนอน</li>
+                <li><code>&lt;strong&gt;</code>: ข้อความเข้ม</li>
+                <li><code>&lt;em&gt;</code>: ข้อความเอียง</li>
+                <li><code>&lt;b&gt;</code>: ข้อความหนา</li>
+                <li><code>&lt;i&gt;</code>: ข้อความเอียง</li>
+                <li><code>&lt;u&gt;</code>: ขีดเส้นใต้ข้อความ</li>
+                <li><code>&lt;mark&gt;</code>: ข้อความเน้น</li>
+                <li><code>&lt;small&gt;</code>: ข้อความขนาดเล็ก</li>
+                <li><code>&lt;del&gt;</code>: ข้อความที่ถูกลบ</li>
+                <li><code>&lt;ins&gt;</code>: ข้อความที่ถูกแทรก</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>การจัดโครงสร้าง</h2>
+            <ul>
+                <li><code>&lt;div&gt;</code>: กล่องคอนเทนต์ (block)</li>
+                <li><code>&lt;span&gt;</code>: กล่องคอนเทนต์ (inline)</li>
+                <li><code>&lt;header&gt;</code>: ส่วนหัว</li>
+                <li><code>&lt;footer&gt;</code>: ส่วนท้าย</li>
+                <li><code>&lt;nav&gt;</code>: การนำทาง</li>
+                <li><code>&lt;section&gt;</code>: ส่วนหรือหมวด</li>
+                <li><code>&lt;article&gt;</code>: บทความ</li>
+                <li><code>&lt;aside&gt;</code>: เนื้อหานอกข้าง</li>
+                <li><code>&lt;main&gt;</code>: เนื้อหาหลัก</li>
+                <li><code>&lt;figure&gt;</code>: รูปภาพหรือแผนภูมิ</li>
+                <li><code>&lt;figcaption&gt;</code>: คำบรรยายรูปภาพหรือแผนภูมิ</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>ลิงค์และรูปภาพ</h2>
+            <ul>
+                <li><code>&lt;a&gt;</code>: ลิงค์</li>
+                <li><code>&lt;img&gt;</code>: รูปภาพ</li>
+                <li><code>&lt;map&gt;</code>: แผนที่รูปภาพ</li>
+                <li><code>&lt;area&gt;</code>: พื้นที่ในแผนที่รูปภาพ</li>
+                <li><code>&lt;picture&gt;</code>: รูปภาพที่ตอบสนอง</li>
+                <li><code>&lt;source&gt;</code>: แหล่งที่มาของรูปภาพหรือมัลติมีเดีย</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>ตาราง</h2>
+            <ul>
+                <li><code>&lt;table&gt;</code>: ตาราง</li>
+                <li><code>&lt;tr&gt;</code>: แถวในตาราง</li>
+                <li><code>&lt;th&gt;</code>: หัวข้อในตาราง</li>
+                <li><code>&lt;td&gt;</code>: เซลล์ข้อมูลในตาราง</li>
+                <li><code>&lt;thead&gt;</code>: ส่วนหัวของตาราง</li>
+                <li><code>&lt;tbody&gt;</code>: ส่วนเนื้อหาของตาราง</li>
+                <li><code>&lt;tfoot&gt;</code>: ส่วนท้ายของตาราง</li>
+                <li><code>&lt;caption&gt;</code>: คำอธิบายของตาราง</li>
+                <li><code>&lt;col&gt;</code>: กำหนดสไตล์สำหรับคอลัมน์</li>
+                <li><code>&lt;colgroup&gt;</code>: กลุ่มคอลัมน์ในตาราง</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>ฟอร์ม</h2>
+            <ul>
+                <li><code>&lt;form&gt;</code>: แบบฟอร์ม</li>
+                <li><code>&lt;input&gt;</code>: ช่องกรอกข้อมูล</li>
+                <li><code>&lt;textarea&gt;</code>: กล่องข้อความ</li>
+                <li><code>&lt;button&gt;</code>: ปุ่ม</li>
+                <li><code>&lt;select&gt;</code>: รายการตัวเลือก</li>
+                <li><code>&lt;option&gt;</code>: ตัวเลือกในรายการ</li>
+                <li><code>&lt;label&gt;</code>: ป้ายชื่อสำหรับฟอร์ม</li>
+                <li><code>&lt;fieldset&gt;</code>: กลุ่มฟอร์ม</li>
+                <li><code>&lt;legend&gt;</code>: คำอธิบายกลุ่มฟอร์ม</li>
+                <li><code>&lt;datalist&gt;</code>: รายการข้อมูล</li>
+                <li><code>&lt;output&gt;</code>: ผลลัพธ์ของฟอร์ม</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>มัลติมีเดีย</h2>
+            <ul>
+                <li><code>&lt;audio&gt;</code>: เสียง</li>
+                <li><code>&lt;video&gt;</code>: วิดีโอ</li>
+                <li><code>&lt;source&gt;</code>: แหล่งที่มาสำหรับ <code>&lt;audio&gt;</code> หรือ <code>&lt;video&gt;</code></li>
+                <li><code>&lt;track&gt;</code>: แทร็กสำหรับ <code>&lt;audio&gt;</code> หรือ <code>&lt;video&gt;</code></li>
+                <li><code>&lt;embed&gt;</code>: ฝังมัลติมีเดีย</li>
+                <li><code>&lt;object&gt;</code>: ฝังวัตถุ</li>
+                <li><code>&lt;param&gt;</code>: พารามิเตอร์สำหรับ <code>&lt;object&gt;</code></li>
+                <li><code>&lt;iframe&gt;</code>: แทรกเฟรม</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>การจัดกลุ่มเนื้อหา</h2>
+            <ul>
+                <li><code>&lt;ul&gt;</code>: รายการไม่เรียงลำดับ</li>
+                <li><code>&lt;ol&gt;</code>: รายการเรียงลำดับ</li>
+                <li><code>&lt;li&gt;</code>: รายการในรายการ</li>
+                <li><code>&lt;dl&gt;</code>: รายการคำอธิบาย</li>
+                <li><code>&lt;dt&gt;</code>: คำในรายการคำอธิบาย</li>
+                <li><code>&lt;dd&gt;</code>: คำอธิบายในรายการคำอธิบาย</li>
+                <li><code>&lt;figure&gt;</code>: รูปภาพหรือมัลติมีเดียที่มีคำอธิบาย</li>
+                <li><code>&lt;figcaption&gt;</code>: คำอธิบายสำหรับ <code>&lt;figure&gt;</code></li>
+                <li><code>&lt;main&gt;</code>: เนื้อหาหลักของเอกสาร</li>
+                <li><code>&lt;div&gt;</code>: กล่องคอนเทนต์ทั่วไป</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>อื่นๆ</h2>
+            <ul>
+                <li><code>&lt;details&gt;</code>: รายละเอียดเพิ่มเติมที่สามารถยุบและขยายได้</li>
+                <li><code>&lt;summary&gt;</code>: สรุปสำหรับ <code>&lt;details&gt;</code></li>
+                <li><code>&lt;menu&gt;</code>: เมนู</li>
+                <li><code>&lt;menuitem&gt;</code>: รายการในเมนู</li>
+                <li><code>&lt;dialog&gt;</code>: กล่องสนทนา</li>
+                <li><code>&lt;canvas&gt;</code>: พื้นที่สำหรับการวาดภาพด้วย JavaScript</li>
+                <li><code>&lt;svg&gt;</code>: รูปภาพเวกเตอร์</li>
+                <li><code>&lt;math&gt;</code>: สัญลักษณ์ทางคณิตศาสตร์</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>สร้างโดย: Tharathip Prakan</p>
+    </footer>
+</body>
+</html>
